@@ -1,0 +1,568 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #4B32C9;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #4B32C9;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #555252;
+	background-image: url("../img/header-bg.jpg");
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: white;
+    background: #4b32c9;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+	background:#f6f6f6;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+    
+    .main aside2 {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+/* ============
+    WIDE: Menu
+   ============ */
+
+    .title {
+        float: left;
+    }
+
+    nav {
+        float: right;
+        width: 38%;
+    }
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float:right;
+        width: 57%;
+    }
+
+    .main aside {
+        float:left;
+        width: 28%;
+    }
+	
+	
+	
+	
+	
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+#contenido4 {
+	 
+
+float:left;
+width: 90%;
+line-height:26px;
+text-align:justify;
+padding:5px;
+margin-left:05%;
+margin-bottom:05px
+
+}
+#menu3 {
+	
+	background-color:#f6f6f6;
+
+
+  
+
+width:85%;
+line-height:26px;
+text-align:center;
+padding:0px;
+ margin-left:09px;
+ border-bottom-left-radius:20px;
+				border-bottom-right-radius:20px;
+				
+				border-top-left-radius:20px;
+				border-top-right-radius:20px;
+				border: double 5px  #CCCCCC;
+ 
+ 
+}
+input[type="button"],input[type="submit"],input[type="reset"],.bt{
+	background:#000;
+	height:50px;
+	bottom:37px;font-weight:600; color:#09f; padding:6px 10px 6px 10px;
+-moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; border: double 5px #09f;
+	text-transform:uppercase;
+	width: 150px;
+	margin-left: 0em;
+
+	
+}
+input[type="button"]:hover,input[type="submit"]:hover{
+	border-color: #9A9090; cursor:pointer; color:#09F;
+}
+
+.editable{
+	border:solid 1px #909090; margin-left:6px;
+	-moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; border: double 2px #999999;
+	/* muestra sombra o contorno al elemento aplicado*/
+	-webkit-box-shadow: 2px 2px 5px #999;
+-moz-box-shadow: 2px 2px 5px #999;
+filter: shadow(color=#999999, direction=135, strength=2);
+	
+}
+.editable:hover{border-color: #666;}
+.letra2{font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color: #333;}
+.editable{
+	border:solid 1px #909090; margin-left:6px;
+	-moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; border: double 2px #999999;
+	/* muestra sombra o contorno al elemento aplicado*/
+	-webkit-box-shadow: 2px 2px 5px #999;
+-moz-box-shadow: 2px 2px 5px #999;
+filter: shadow(color=#999999, direction=135, strength=2);
+	
+}
+.editable:hover{border-color: #666;}
+.form-groupW2 {
+	width:49%;
+  float:left;
+   margin-bottom: 2px;
+  margin-left:1%;
+ 
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-responsive {
+position: relative;
+padding-bottom: 56.25%; /* 16/9 ratio */
+padding-top: 30px; /* IE6 workaround*/
+height: 0;
+overflow: hidden;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.letra1{ font-family: "Brush Script MT", "Brush Script Std","cursive", Palatino, serif;
+	font-size:45px;
+	color: #FFF;}
+.letra3{font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color: #ffffff ;}
+
+.letra4{font-size: calc(1em + 1vw);
+line-height: 1em;
+padding: 1em;
+margin: 1em;
+ }
+
+ 
+#contenido10 {
+margin-top: 10px; 	 
+	 
+float: right;
+width: 70%;
+
+
+
+background-color: #FFF;
+
+    height: 120px;
+}
+
+/* 16/9 ratio
+
+input2[type="button"],input[type="submit"],input[type="reset"],.bt{
+	background:#2651a8;
+	height:50px;
+	bottom:37px;font-weight:600; color:#FBF5F6; padding:6px 10px 6px 10px;
+-moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; border: double 5px #666666;
+	text-transform:uppercase;
+    width: 200px;
+    margin-left: 3em;
+    
+    
+    
+    
+
+	
+}
+input2[type="button"]:hover,input[type="submit"]:hover{
+	border-color: #9A9090; cursor:pointer; color:#909090;
+}
+
+.editable{
+	border:solid 1px #909090; margin-left:6px;
+	-moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; border: double 2px #999999;
+	/* muestra sombra o contorno al elemento aplicado
+	-webkit-box-shadow: 2px 2px 5px #999;
+-moz-box-shadow: 2px 2px 5px #999;
+filter: shadow(color=#999999, direction=135, strength=2);
+	
+}
+.editable:hover{border-color: #666;}*/
+
+
